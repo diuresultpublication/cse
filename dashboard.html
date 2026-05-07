@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - DIU Student Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="https://daffodilvarsity.edu.bd/images/logo.svg" alt="DIU Logo">
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="dashboard.html" class="active"><i class="fas fa-th-large"></i> Dashboard</a></li>
+            <li><a href="profile.html"><i class="fas fa-user-graduate"></i> Student Profile</a></li>
+            <li><a href="payment.html"><i class="fas fa-file-invoice-dollar"></i> Payment Ledger</a></li>
+            <li><a href="#"><i class="fas fa-tags"></i> Waiver</a></li>
+            <li><a href="#"><i class="fas fa-file-alt"></i> Registration/Exam Clearance</a></li>
+            <li><a href="#"><i class="fas fa-book"></i> Registered Course</a></li>
+            <li><a href="result.html"><i class="fas fa-poll"></i> Result</a></li>
+            <li><a href="routine.html"><i class="fas fa-clock"></i> Routine</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Live Result</a></li>
+            <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Teaching Evaluation</a></li>
+            <li><a href="#"><i class="fas fa-graduation-cap"></i> Convocation Apply</a></li>
+            <li><a href="#"><i class="fas fa-bus"></i> Transport Card Apply</a></li>
+            <li><a href="#"><i class="fas fa-award"></i> Scholarship <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#"><i class="fas fa-certificate"></i> Certificate & Transcript <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#"><i class="fas fa-laptop-code"></i> Learning Resources <i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="user-info">
+                <div class="name">Mubassher Alam</div>
+                <div class="id">242-15-856</div>
+            </div>
+        </header>
+
+        <main class="content-area">
+            <h1 class="page-title">Dashboard</h1>
+            
+            <div class="dashboard-widgets">
+                <div class="widget">
+                    <div class="widget-icon"><i class="fas fa-star"></i></div>
+                    <div class="widget-info">
+                        <h3>Current SGPA</h3>
+                        <p>3.47</p>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="widget-info">
+                        <h3>Total Credits Completed</h3>
+                        <p>15.00</p>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget-icon"><i class="fas fa-book-open"></i></div>
+                    <div class="widget-info">
+                        <h3>Total Enrolled Courses</h3>
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="section-title"><i class="fas fa-bullhorn"></i> Recent Notices</h2>
+                <ul style="list-style: none; padding-left: 0; line-height: 2.2;">
+                    <li><i class="fas fa-angle-right" style="color:var(--accent-blue); margin-right: 8px;"></i> Midterm Examination Schedule Spring 2026 published.</li>
+                    <li><i class="fas fa-angle-right" style="color:var(--accent-blue); margin-right: 8px;"></i> Payment deadline for the current semester extended to next week.</li>
+                    <li><i class="fas fa-angle-right" style="color:var(--accent-blue); margin-right: 8px;"></i> Teaching evaluation is now open. Please complete to view results.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

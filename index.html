@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIU Student Portal - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-page">
+        <header class="login-header">
+            <img src="https://daffodilvarsity.edu.bd/images/logo.svg" alt="DIU Logo">
+            <nav class="login-nav">
+                <a href="https://daffodilvarsity.edu.bd/">Home</a>
+                <a href="#">Student Application</a>
+                <a href="#">DIU Smart Proctor</a>
+            </nav>
+        </header>
+
+        <main class="login-main">
+            <img src="https://daffodilvarsity.edu.bd/images/logo.svg" alt="DIU Logo Large" class="login-logo-large">
+            
+            <div class="login-card">
+                <h2>Welcome to Student Portal</h2>
+                <form class="login-form" onsubmit="handleLogin(event)">
+                    <div id="error-msg" class="error-msg">Invalid credentials.</div>
+                    <input type="text" id="studentId" placeholder="Student ID" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="login-footer">
+            &copy; 2026 <strong>DIU Student Portal</strong>. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const studentId = document.getElementById('studentId').value;
+            const password = document.getElementById('password').value;
+            const errorMsg = document.getElementById('error-msg');
+
+            if (studentId === '242-15-856' && password === 'tanzim@1234') {
+                window.location.href = 'dashboard.html';
+            } else {
+                errorMsg.style.display = 'block';
+                errorMsg.textContent = 'Invalid Student ID or Password.';
+            }
+        }
+    </script>
+</body>
+</html>
