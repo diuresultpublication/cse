@@ -137,6 +137,8 @@ body {
     top: 0;
     overflow-y: auto;
     border-right: 1px solid #111827;
+    z-index: 1000;
+    transition: transform 0.3s ease;
 }
 
 .sidebar::-webkit-scrollbar { width: 6px; }
@@ -322,4 +324,28 @@ th { font-weight: 600; color: #374151; }
     .result-container { flex-direction: column; }
     .grading-system { width: 100%; }
     .profile-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+    .sidebar.sidebar-open {
+        transform: translateX(0);
+    }
+    .main-wrapper {
+        margin-left: 0;
+    }
+    .dashboard-widgets {
+        grid-template-columns: 1fr;
+    }
+    .profile-info-grid {
+        grid-template-columns: 1fr;
+    }
+    .select-group {
+        flex-direction: column;
+    }
+    .select-group select {
+        width: 100%;
+    }
 }
