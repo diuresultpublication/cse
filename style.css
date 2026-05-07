@@ -326,15 +326,34 @@ th { font-weight: 600; color: #374151; }
     .profile-grid { grid-template-columns: 1fr; }
 }
 
+body {
+    overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
+    .login-card {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    .login-nav {
+        display: none;
+    }
+    .login-header {
+        justify-content: center;
+    }
     .sidebar {
         transform: translateX(-100%);
     }
     .sidebar.sidebar-open {
         transform: translateX(0);
+        box-shadow: 4px 0 10px rgba(0,0,0,0.1);
     }
     .main-wrapper {
         margin-left: 0;
+        transition: transform 0.3s ease;
+    }
+    .sidebar.sidebar-open + .main-wrapper {
+        transform: translateX(250px);
     }
     .dashboard-widgets {
         grid-template-columns: 1fr;
@@ -347,5 +366,8 @@ th { font-weight: 600; color: #374151; }
     }
     .select-group select {
         width: 100%;
+    }
+    .result-main {
+        min-width: 100%;
     }
 }
